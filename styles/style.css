@@ -39,6 +39,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  color: #060D10;
 }
 
 h1,
@@ -50,20 +51,38 @@ strong,
   font-weight: 500;
 }
 
+.btn {
+  color: #060D10;
+}
+
 /* Header */
+header {
+  background-color: #66D1FF;
+}
+
 header .btn {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
 }
 
 .phone {
   font-weight: 500;
   font-size: 28px;
   line-height: 34px;
+  text-decoration: none;
+  color: #060D10;
 }
 
 /* About */
+.about {
+  color: #FFFFFF;
+  text-shadow: 1px 1px 2px #060D10;
+}
+
 .about-title {
   font-size: 60px;
   line-height: 89px;
@@ -76,6 +95,10 @@ header .btn {
 }
 
 /* Advantages */
+.advantages {
+  background-color: rgba(102, 209, 255, .1);
+}
+
 .advantages-list-title,
 .lead-text {
   font-size: 48px;
@@ -90,16 +113,29 @@ header .btn {
 .advatages-text {
   font-size: 26px;
   line-height: 140%;
+  opacity: 0.8;
 }
 
 /* Lead */
+.lead {
+  background: linear-gradient(208.35deg, rgba(102, 209, 255, 0.1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
+  mix-blend-mode: normal;
+}
+
 div.lead .btn {
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
+  border: 3px solid #060D10;
+  border-radius: 4px;
+  background-color: rgba(196, 196, 196, 0);
 }
 
 /* Footer */
+.footer {
+  background-color: #060D10;
+  color:#FFFFFF;
+}
 .footer-text {
   font-weight: 500;
   font-size: 20px;
