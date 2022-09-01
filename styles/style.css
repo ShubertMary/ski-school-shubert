@@ -36,10 +36,25 @@
 }
 
 /* Common */
+* {
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #060D10;
+  margin: 0;
+}
+
+.container {
+  width: 1278px;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 h1,
@@ -55,9 +70,21 @@ strong,
   color: #060D10;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 /* Header */
 header {
   background-color: #66D1FF;
+  padding: 34px 0;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .btn {
@@ -81,6 +108,16 @@ header .btn {
 .about {
   color: #FFFFFF;
   text-shadow: 1px 1px 2px #060D10;
+  background-color: rgb(131, 166, 183);
+  background-image: url(../images/bg-about.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.about-fade {
+  background-color: rgba(6, 13, 16, 0.25);
+  padding: 240px 0;
 }
 
 .about-title {
@@ -92,17 +129,30 @@ header .btn {
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
+  padding: 0 109px;
 }
 
 /* Advantages */
 .advantages {
   background-color: rgba(102, 209, 255, .1);
+  padding: 170px 0;
 }
 
 .advantages-list-title,
 .lead-text {
   font-size: 48px;
   line-height: 167%;
+}
+
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 0 -15px;
+}
+.advantages-item {
+  width: 33.33%;
+  padding: 0 15px;
 }
 
 .advantages-title {
@@ -120,6 +170,18 @@ header .btn {
 .lead {
   background: linear-gradient(208.35deg, rgba(102, 209, 255, 0.1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
   mix-blend-mode: normal;
+  padding: 170px 0 180px 0;
+}
+
+.lead-images {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.lead-photo {
+  width: 25%;
+  padding: 0 15px;
 }
 
 div.lead .btn {
@@ -134,8 +196,9 @@ div.lead .btn {
 /* Footer */
 .footer {
   background-color: #060D10;
-  color:#FFFFFF;
+  color: #FFFFFF;
 }
+
 .footer-text {
   font-weight: 500;
   font-size: 20px;
