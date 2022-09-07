@@ -39,6 +39,14 @@
 * {
   box-sizing: border-box;
 }
+
+p,
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -66,7 +74,7 @@ strong,
   font-weight: 500;
 }
 
-.btn {
+button {
   color: #060D10;
 }
 
@@ -87,13 +95,16 @@ header {
   align-items: center;
 }
 
-header .btn {
+.header-btn {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   background: #FFFFFF;
   border: 2px solid #FFFFFF;
   border-radius: 4px;
+  padding: 6px 39px;
+  min-width: 276px;
 }
 
 .phone {
@@ -102,6 +113,11 @@ header .btn {
   line-height: 34px;
   text-decoration: none;
   color: #060D10;
+}
+
+.logo-picture {
+  width: 295.5px;
+  height: 50.76px;
 }
 
 /* About */
@@ -113,16 +129,18 @@ header .btn {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .about-fade {
   background-color: rgba(6, 13, 16, 0.25);
-  padding: 240px 0;
+  padding: 240px 0 260px 0;
 }
 
 .about-title {
   font-size: 60px;
   line-height: 89px;
+  margin-bottom: 60px;
 }
 
 .about-text {
@@ -135,29 +153,38 @@ header .btn {
 /* Advantages */
 .advantages {
   background-color: rgba(102, 209, 255, .1);
-  padding: 170px 0;
+  padding: 170px 0 0 0;
+}
+.advantages .container {
+  padding: 0 0 170px 0;
+  border-bottom: 1px solid rgba(6, 13, 16, .5);
 }
 
-.advantages-list-title,
-.lead-text {
+.advantages-list-title {
   font-size: 48px;
   line-height: 167%;
+  margin-bottom: 100px;
 }
+
 
 .advantages-list {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  margin: 0 -15px;
+  margin: 0 -15px -70px -15px;
 }
+
 .advantages-item {
   width: 33.33%;
   padding: 0 15px;
+  margin-bottom: 70px;
 }
 
 .advantages-title {
+  display: block;
   font-size: 32px;
   line-height: 167%;
+  margin-bottom: 25px;
 }
 
 .advatages-text {
@@ -169,8 +196,12 @@ header .btn {
 /* Lead */
 .lead {
   background: linear-gradient(208.35deg, rgba(102, 209, 255, 0.1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
-  mix-blend-mode: normal;
   padding: 170px 0 180px 0;
+}
+
+.lead-text {
+  font-size: 48px;
+  line-height: 167%;
 }
 
 .lead-images {
@@ -182,15 +213,21 @@ header .btn {
 .lead-photo {
   width: 25%;
   padding: 0 15px;
+  /* решить вопрос с тенями!!! */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-div.lead .btn {
+.lead-btn {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
   border: 3px solid #060D10;
   border-radius: 4px;
   background-color: rgba(196, 196, 196, 0);
+  padding: 17px 105px 19px;
+  min-width: 290px;
+  margin: 60px 0 130px;
 }
 
 /* Footer */
@@ -199,14 +236,44 @@ div.lead .btn {
   color: #FFFFFF;
 }
 
+.footer-wrap {
+  display: flex;
+  padding: 35px 0;
+  align-items: center;
+}
+
 .footer-text {
   font-weight: 500;
   font-size: 20px;
   line-height: 167%;
+  margin-right: 50px;
+}
+
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.social-item {
+  margin-right: 20px;
+}
+
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-position: center center;
 }
 
 .copyright {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  margin: 0 0 0 auto;
 }
+
+/* ПРОБЛЕМЫ */
+/* Градиент - в лиде */
+/* Тень от картинок при паддинге - заменить марджинами? */
