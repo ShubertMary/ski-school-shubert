@@ -62,7 +62,7 @@ body {
 .container {
   width: 1278px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 h1,
@@ -105,6 +105,7 @@ header {
   border-radius: 4px;
   padding: 6px 39px;
   min-width: 276px;
+
 }
 
 .phone {
@@ -195,8 +196,8 @@ header {
 
 /* Lead */
 .lead {
-  background: linear-gradient(208.35deg, rgba(102, 209, 255, 0.1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
   padding: 170px 0 180px 0;
+  background: linear-gradient(to bottom left, rgba(102, 209, 255, 0.1) 43.85%, rgba(196, 196, 196, 0) 43.86%);
 }
 
 .lead-text {
@@ -211,8 +212,8 @@ header {
 }
 
 .lead-photo {
-  width: 25%;
-  padding: 0 15px;
+  width: 23,24%;
+  margin: 0 15px;
   /* решить вопрос с тенями!!! */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -275,5 +276,4 @@ header {
 }
 
 /* ПРОБЛЕМЫ */
-/* Градиент - в лиде */
-/* Тень от картинок при паддинге - заменить марджинами? */
+/* Градиент в лиде - ТЗ */
